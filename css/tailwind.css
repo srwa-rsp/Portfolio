@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/Roboto-Bold.ttf);
+  src: url(/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Varela;
+  src: url(/fonts/VarelaRound-Regular.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-item {
+    @apply p-2
+      rounded-3xl hover:bg-gray-200 hover transition
+      delay-100
+      ease-in;
+  }
+  h3 {
+    @apply font-bold text-2xl p-2;
+  }
+  /*****************SKILLS***************/
+  .progress {
+    @apply w-full h-4 mt-2 mb-10;
+  }
+  .progress-container {
+    @apply h-4 bg-gray-300  rounded-full relative;
+  }
+  .progressbar {
+    @apply h-2 bg-gradient-to-r from-blue-400  to-blue-500 rounded-full absolute transform translate-y-1 translate-x-1;
+  }
+  #skills-list p {
+    @apply text-gray-700;
+  }
+  /*****************DEGREES***************/
+  #degree-list h4 {
+    @apply text-gray-800 font-bold py-4;
+  }
+  #degree-list p {
+    @apply text-gray-700 mb-6;
+  }
+  /*****************LANGUAGES*****************/
+
+  #single-lang h5 {
+    @apply text-gray-800 font-bold py-4;
+  }
+  #single-lang p {
+    @apply text-gray-700 mb-6;
+  }
+}

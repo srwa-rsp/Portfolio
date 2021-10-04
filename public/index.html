@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./build/tailwind.css" />
+   
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+    <title>Portfolio</title>
+  </head>
+  <body class="container mx-auto bg-gray-100 font-Roboto leading-6 relative">
+    <!-- HEADER -->
+    <header
+    id="header"
+      class="
+        fixed
+        z-10
+        left-0
+        w-full
+        h-16
+        flex
+        justify-between
+        items-center
+        px-10
+        bg-gray-100
+        shadow-lg
+      "
+    >
+      <div>
+        <h1 class="font-bold text-gray-700"><a href="#">SERWA RASHIDPOUR</a></h1>
+      </div>
+      <button id="hamburger" class="mobile-menu-button fa fa-bars fa-2x lg:invisible absolute right-4" onclick="myFunction();"></button>
+      <ul  class=" lg:w-1/2 hidden lg:flex flex-row justify-between font-bold text-gray-600 ">
+          <li class="nav-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills">My skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">My portfilio</a>
+          </li>
+          <li class="p-2">
+            <a
+              class="
+                bg-gray-300
+                hover:bg-gray-200
+                px-4
+                py-2
+                rounded-3xl
+                text-center
+              "
+              href="#"
+              >Contact me</a
+            >
+          </li>
+      </ul>
+    
+     
+    </header>
+ <!--------------------- Mobile menu ----------------------->
+    <ul class="mobile-menu fixed top-16 right-4 hidden bg-gray-100 z-10 w-full rounded font-semibold  ">
+      <li class="nav-item text-center">
+        <a href="#">Home</a>
+      </li>
+      <li class="nav-item text-center ">
+        <a href="#about">About me</a>
+      </li>
+      <li class="nav-item text-center">
+        <a href="#skills">My skills</a>
+      </li>
+      <li class="nav-item text-center">
+        <a href="#">My portfilio</a>
+      </li>
+      <li class="p-2 text-center">
+        <a
+          class="
+            bg-gray-300
+            hover:bg-gray-200
+            px-4
+            py-2
+            rounded-3xl
+            text-center
+          "
+          href="#"
+          >Contact me</a
+        >
+      </li>
+  </ul>
+    <!-- MAIN -->
+    <main class="h-screen mx-auto flex-col justify-between items-center pt-28">
+      <div class="flex flex-col justify-center items-center">
+        <figure class="w-48 h-48 my-10 mx-auto rounded-full border-4 border-gray-50 shadow-lg">
+          <img
+            class="w-48 h-48 rounded-full "
+            src="/images/photo_2020-10-06_15-58-29.jpg"
+            alt=""
+          />
+        </figure>
+
+        <h1 class="text-center font-bold text-4xl">
+          Hi! <br />
+          I'm Serwa,I'm a front-end developer!
+        </h1>
+      </div>
+      <div
+        class="
+          w-80
+          mx-auto
+          flex flex-wrap
+          justify-around
+          items-center
+          mt-10
+        "
+      >
+      <a href="https://github.com/srwa-rsp"> <i class="fa fa-github fa-3x "></i></a>
+      <a href="your link here"> <i class="fa fa-google fa-3x"></i></a>
+      <a href="https://www.linkedin.com/in/srwa-rsp-97a65520a/"> <i class="fa fa-linkedin-square fa-3x"></i></a>
+      <a href="your link here"> <i class="fa fa-twitter-square fa-3x"></i></a>
+      <a href="your link here"> <i class="fa fa-facebook-square fa-3x"></i></a>
+      </div>
+    </main>
+    <!------------------ About Me ------------->
+    <section class="block my-32 text-gray-800 px-10 font-Varela" id="about">
+      <h2 class="font-bold text-4xl py-8">About me</h2>
+      <p class="leading-7 font-medium ">
+        Est enim velit ullamco ad consectetur proident cillum eiusmod id. Laborum sunt exercitation incididunt anim et mollit. Tempor duis aliqua labore deserunt adipisicing laborum commodo ipsum est in cupidatat enim aliqua. Excepteur id cillum commodo enim reprehenderit ullamco incididunt tempor qui nisi esse excepteur ut adipisicing.
+        Magna tempor cillum laborum eiusmod ipsum sint do velit est ad eiusmod veniam proident. Duis voluptate mollit qui nulla cupidatat occaecat irure commodo est pariatur esse do excepteur sint. Id consectetur consequat labore veniam tempor labore nulla ut tempor cupidatat mollit ea. Aute ad pariatur cillum minim culpa pariatur non qui consequat cillum dolor. Nostrud nulla ipsum nisi sunt. In ea ea nulla duis non nulla adipisicing id voluptate laboris culpa Lorem non. Deserunt esse reprehenderit exercitation reprehenderit veniam deserunt.
+      </p>
+    </section>
+  <!------------------Skills ------------------->
+    <section id="skills" class="block my-32 text-gray-800 px-10 font-Varela ">
+      <div class="lg:grid lg:grid-rows-2 lg:grid-cols-2 lg:grid-flow-col gap-x-4 gap-y-10 overflow-hidden sm:flex sm:flex-col">
+
+        <div class=" row-span-3  bg-white px-2 rounded-l shadow-lg">
+          <h3 class=""><i class="fa fa-code " aria-hidden="true"></i> My skills</h3>
+          
+          <div id="skills-list" class="skills-list mx-4">
+            <p >HTML5, CSS3 (flex, grid) </p>
+            <div class="progress">
+              <div class=" progress-container">
+                  <div class="progressbar w-3/4 ">
+                  </div>
+              </div>
+          </div>
+          <p >Sass (Scss),Tailwind, Foundation, Responsive </p>
+          <div class=" progress ">
+            <div class="progress-container">
+                <div class=" w-96 progressbar">
+                </div>
+            </div>
+        </div>
+        <p >Javascript (Functional, Datastructure and algorythem,), React </p>
+        <div class=" progress">
+          <div class=" progress-container">
+              <div class=" w-1/2 progressbar">
+              </div>
+          </div>
+      </div>
+      <p >HTML5, CSS3 (flex, grid) </p>
+            <div class="progress ">
+              <div class=" progress-container">
+                  <div class="progressbar w-3/4 ">
+                  </div>
+              </div>
+          </div>
+          <p >HTML5, CSS3 (flex, grid) </p>
+            <div class="progress ">
+              <div class=" progress-container">
+                  <div class="progressbar w-3/4 ">
+                  </div>
+              </div>
+          </div>
+          <p >HTML5, CSS3 (flex, grid) </p>
+            <div class="progress ">
+              <div class=" progress-container">
+                  <div class="progressbar w-3/4 ">
+                  </div>
+              </div>
+          </div>
+          </div>
+
+        </div>
+      
+        <div class= "lg:col-span-1 bg-white px-4 rounded-l shadow-lg ">
+          <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Certificates and Degrees</h3>
+          <div id="degree-list" class="px-2">
+            <h4>BSc in Information Technology</h4>
+            <p>From UUT - Urmia University of Technology</p>
+            
+
+
+        </div>
+        </div>
+      
+        <div class=" lg:col-span-1 bg-white px-2 rounded-l shadow-lg">
+          <h3><i class="fa fa-language" aria-hidden="true"></i> Languages</h3>
+          <div id="lang-list " class="px-4">
+            <div id="single-lang" class="w-1/2 inline-block float-left">
+                <h5>English</h5>
+                <p>IELTS (General Training) - C2</p>
+            </div>
+            <div id="single-lang" class="w-1/2 inline-block float-left">
+                <h5>Persian</h5>
+                <p>Bilingual proficiency</p>
+            </div>
+            <div id="single-lang" class=" w-1/2 inline-block float-left">
+                <h5>Kurdish</h5>
+                <p>Bilingual proficiency</p>
+            </div>
+            <div id="single-lang" class=" w-1/2 inline-block float-left">
+                <h5>German</h5>
+                <p>Beginner</p>
+            </div>
+
+        </div>
+        </div>
+      
+      </div>
+    </section>
+<script src="/public/script.js"></script>
+  </body>
+</html>
